@@ -41,7 +41,7 @@
                     <strong><?php echo 'Rs '.$this->cart->total(); ?></strong>
                 </li>
             </ul>
-            <a href="<?php echo base_url('products/'); ?>" class="btn btn-block btn-info">Add Items</a>
+            <a href="<?php echo base_url('products/index'); ?>" class="btn btn-block btn-info">Add Items</a>
         </div>
         <div class="col-md-8 order-md-1">
             <h4 class="mb-3">Contact Details</h4>

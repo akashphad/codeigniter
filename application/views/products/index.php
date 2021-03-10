@@ -4,7 +4,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </head>
+
+    <!-- <a href="<?php //echo base_url('users/logout'); ?>" class="logout">Logout</a> -->
 
   <h1 style="color:#00adff;  text-align: center;" >Online Shopping System</h1>
   <h2>PRODUCTS</h2>
