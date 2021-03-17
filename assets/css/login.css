@@ -1,0 +1,42 @@
+.container {
+    position: relative;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    opacity: 0.8;
+    padding: 20px 0 30px 0;
+  }
+  .card-header{
+    position: relative;
+    border-radius: 5px;
+    background-color: #45484D;
+    padding: 10px  10px ;
+    margin-bottom: 30px;
+    color: white;
+  }
+  /* h1{
+      background-color: rgb(209, 150, 61);
+  } */
+  h2{
+    color: white;
+    text-align:center;
+    
+  }
+
+.form-group{
+    display: flexbox;
+    text-align: center;
+  }
+
+.send-button{
+    display: flexbox;
+    text-align: center;  
+} 
+p{
+    display: flexbox;
+    text-align: center;
+}
+body{
+   background-image: url(https://images.unsplash.com/photo-1557821552-17105176677c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8b25saW5lJTIwc2hvcHBpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

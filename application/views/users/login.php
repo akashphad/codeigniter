@@ -1,5 +1,6 @@
 <head>
-    <title>Basic Crud operation in Codeigniter 3</title>
+    <title>Login</title>
+    <link href="<?php echo base_url('assets/css/login.css'); ?>" rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -8,7 +9,7 @@
 </head>
 
 <div class="container">
-    <h2>Login to Your Account</h2>
+<div class="card-header"><h2>Login to Your Account</h2></div>
 	
     <!-- Status message -->
     <?php  

@@ -34,7 +34,10 @@ class Products extends CI_Controller{
 
            
         }else{ 
-            redirect('users/login'); 
+            $data['products'] = $this->product->getRows();
+            $this->load->view('home/homenav');
+            $this->load->view('products/index', $data);
+             
         }
         
     }
@@ -61,12 +64,41 @@ class Products extends CI_Controller{
         redirect('users/login'); 
         }    
     }
+    function contact()
+    {    $data = array();
+        if($this->isUserLoggedIn){
+         $con = array( 
+             'id' => $this->session->userdata('userId') 
+         ); 
+         $data['user'] = $this->user->getRows($con);
+ 
+            $this->load->view('products/navbar',$data);
+            $this->load->view('home/contact');
+        }
+ 
+        else{
+        $this->load->view('home/homenav');
+        $this->load->view('home/contact');
+        }
+    }
 
-    // public function logout(){ 
-    //     $this->session->unset_userdata('isUserLoggedIn'); 
-    //     $this->session->unset_userdata('userId'); 
-    //     $this->session->sess_destroy(); 
-    //     redirect('users/login/');
-    // }
+    function about()
+    {   
+        $data = array();
+    if($this->isUserLoggedIn){
+     $con = array( 
+         'id' => $this->session->userdata('userId') 
+     ); 
+     $data['user'] = $this->user->getRows($con);
+
+        $this->load->view('products/navbar',$data);
+        $this->load->view('home/about');
+    }
     
+    else{
+        $this->load->view('home/homenav');
+        $this->load->view('home/about');
+        }
+    }
+   
 }
