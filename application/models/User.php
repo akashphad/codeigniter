@@ -86,4 +86,14 @@ class User extends CI_Model{
             return $this->db->update('users',$data);
         }        
     }
+    //report user
+    function get_userinfo() {
+		$query = $this->db->get($this->table);
+
+		if ($query->num_rows() > 0) {
+			return $query->result();
+		}
+		
+		return NULL;
+	}
 }

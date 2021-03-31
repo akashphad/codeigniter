@@ -9,7 +9,42 @@
 </head>
 <h2>Fill the Details of New Product: </h2>
 
-<form method="post" action="<?php echo base_url('productsCreate'); ?>"  >
+<script>
+function validateForm() {
+  var x = document.forms["createproduct"]["name"].value;
+  if (x == "" ) {
+    alert("Name must be filled out");
+    return false;
+  }
+
+  var x = document.forms["createproduct"]["description"].value;
+  if (x == "") {
+    alert("Description must be filled out");
+    return false;
+  }
+
+  var x = document.forms["createproduct"]["price"].value;
+  if (x == "" || isNaN(x)) {
+    alert("Valid Price must be filled out");
+    return false;
+  }
+
+  var x = document.forms["createproduct"]["image"].value;
+  if (x == "") {
+    alert("Description must be filled out");
+    return false;
+  }
+
+  var x = document.forms["createproduct"]["status"].value;
+  if (x == "") {
+    alert("Status must be filled out");
+    return false;
+  }
+}
+</script>
+
+
+<form name="createproduct" method="post" onsubmit="return validateForm()" action="<?php echo base_url('productsCreate'); ?>"  >
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="form-group">

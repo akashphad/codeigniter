@@ -109,4 +109,48 @@ class Product extends CI_Model{
         return $insert?true:false;
     }
     
+    ////////////////////////////////////////////////////////////
+    /*
+    Function to generate Customer Table report
+    */
+
+    function get_customerinfo() {
+		$query = $this->db->get($this->custTable);
+
+		if ($query->num_rows() > 0) {
+			return $query->result();
+		}
+		
+		return NULL;
+	}
+
+    function get_salesinfo() {
+		$query = $this->db->get($this->ordItemsTable);
+
+		if ($query->num_rows() > 0) {
+			return $query->result();
+		}
+		
+		return NULL;
+	}
+
+    function get_productsinfo() {
+		$query = $this->db->get($this->proTable);
+
+		if ($query->num_rows() > 0) {
+			return $query->result();
+		}
+		
+		return NULL;
+	}
+
+    function get_totalsales() {
+		$query = $this->db->select_sum(ordItemsTable.sub_total);
+
+		if ($query->num_rows() > 0) {
+			return $query->result();
+		}
+		
+		return NULL;
+	}
 }

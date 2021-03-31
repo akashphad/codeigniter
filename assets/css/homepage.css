@@ -1,0 +1,16 @@
+.card-img-top:hover{
+    -ms-transform: scale(1.15); /* IE 9 */
+    -webkit-transform: scale(1.15); /* Safari 3-8 */
+    transform: scale(1.15); 
+}
+body{
+    /*   */
+} 
+
+.card{
+    /* padding-right: 5px; */
+    /* margin: 1px; */
+    border-radius:20px;
+    border-color: grey;
+        
+}

@@ -138,7 +138,8 @@ class Users extends CI_Controller {
         $this->session->unset_userdata('isUserLoggedIn'); 
         $this->session->unset_userdata('userId'); 
         $this->session->sess_destroy(); 
-        redirect('users/login/'); 
+        redirect('products/index/'); 
+        // redirect('users/login/');
     } 
      
      

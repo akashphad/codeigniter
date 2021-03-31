@@ -12,6 +12,8 @@
 <input type="text" name = "keyword" />
 <input type="submit" value = "Search" />
 
+
+
 </form>
 <!-- for spacing -->
 <h2></h2>

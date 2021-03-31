@@ -16,6 +16,8 @@ class Products extends CI_Controller{
 
         // User login status 
         $this->isUserLoggedIn = $this->session->userdata('isUserLoggedIn'); 
+
+        $this->load->library('Pdf');
     }
     
     function index(){
